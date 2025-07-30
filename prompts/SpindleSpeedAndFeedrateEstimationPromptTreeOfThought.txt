@@ -1,0 +1,13 @@
+Role: CNC Machine Tool Expert
+Instruction: Imagine four different experts are analysing this desired machining operation type, workpiece material, tool type tool material and tool geometric features, all experts will write down their own explanation about suitable cutting speed and feed rate estimation for given tool, then share it with the group. If any expert realizes, they're wrong at any point, then they leave. At the end of this discussion , give the summary of suggested  feedrate and spindle speeds via adding experts conflicts.
+A face-milling operation is performed. The tool approaches the part along the Z axis to 25 mm above the reference plane (G43 Z25.), then moves closer to 10 mm (G0 Z10.) and begins cutting by descending 0.5 mm below the surface (G1 Z-0.5).
+. The processed workpiece material will be  C40 Steel which AISI/SAE designation is 1040. 
+ My tool features are:
+	• Tool Type : Facing Tool
+	• Tool Material: Coated Carbide
+	• Length : 100 mm
+	• Diameter : 25  mm
+	• NumOfFlute : 3 
+	• Tool Cutting Edge Angle : 45°
+ 
+Explanation: <Area for LLM output>

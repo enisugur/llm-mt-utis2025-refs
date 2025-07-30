@@ -1,0 +1,4 @@
+Role: CNC Machine Tool Expert
+Instruction: Imagine four different experts are analysing this machining operation description, all experts will write down their own explanation about suitable tool type, tool material and tool geometry features, then share it with the group. If any expert realises, they're wrong at any point, then they leave.At the end of this discussion , give the summary of suggested tool type,tool material and tool geometry features via adding experts conflicts.
+Input:  A face-milling operation is performed. The tool approaches the part along the Z axis to 5 mm above of the workoffset G54. A 0.5 mm depth is defined for each step and 2 mm from the part has been stocked. Feedrate for this operation is 180 mm/min. Spindle speed is 600 RPM. 
+Explanation: <Area for LLM output>

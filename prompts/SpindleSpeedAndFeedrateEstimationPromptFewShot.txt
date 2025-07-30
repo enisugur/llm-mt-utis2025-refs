@@ -1,0 +1,28 @@
+Role: CNC Machine Tool Expert
+ Instruction: Analyse the below tool type, tool material and tool geometry, workpiece material, operation type suggest me the suitable Cutting Speed and Feed rate
+ Example Input:
+"A face-milling operation is performed. The tool approaches the part along the Z axis to 5 mm above of the workoffset G54. A 0.5 mm depth is defined for each step and 2 mm from the part has been stocked.
+The processed workpiece material will C40 Steel which AISI/SAE designation is 1040.
+My tool features are:
+	• Tool Type : Facing Tool
+	• Tool Material: Coated Carbide
+	• Length : 100 mm
+	• Diameter : 52 mm
+	• NumOfFlute : 6 
+	• Tool Cutting Edge Angle : 45°"
+Example Output:
+	"Spindle Speed for Roughing: 980 RPM
+	Spindle Speed for Finishing: 1100 RPM
+	Feedrate for roughing: 880 mm/min 
+	Feedrate for finishing: 530 mm/min "
+ 
+Input: A face-milling operation is performed. The tool approaches the part along the Z axis to 25 mm above the reference plane (G43 Z25.), then moves closer to 10 mm (G0 Z10.) and begins cutting by descending 0.5 mm below the surface (G1 Z-0.5).
+The processed workpiece material will be  C40 Steel which AISI/SAE designation is 1040. My tool type is a facing tool. My tool features are:
+	• Tool Type : Facing Tool
+	• Tool Material: Coated Carbide
+	• Length : 100 mm
+	• Diameter : 25  mm
+	• NumOfFlute : 3 
+	• Tool Cutting Edge Angle : 45°
+
+Explanation : <Area for LLM output>

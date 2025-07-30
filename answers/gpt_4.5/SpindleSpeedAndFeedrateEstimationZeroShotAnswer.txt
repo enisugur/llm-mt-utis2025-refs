@@ -1,0 +1,62 @@
+Based on your provided details, let’s thoroughly assess the operation and conditions before recommending ideal cutting parameters:
+
+### Operation and Material Review:
+- **Operation Type**: Face Milling
+- **Workpiece Material**: CK45 Steel (AISI/SAE 1040, Medium Carbon Steel)
+- **Typical Hardness**: Approximately 170-210 HB (Brinell Hardness)
+- **Tool Material**: Coated Carbide (TiAlN or similar standard coating)
+- **Tool Details**: Facemill Tool, Diameter = 25 mm, Number of flutes (teeth) = 3, Cutting edge angle: 45°.
+- **Depth of Cut per pass**: 0.5 mm
+
+### Recommended Cutting Parameters:
+
+#### 1. Cutting Speed (Vc):
+Typical recommended cutting speed for face milling medium carbon steels (like CK45/AISI 1040) using coated carbide inserts ranges from **150 to 220 m/min**.
+
+- Given a tool diameter of 25 mm (0.025 m), calculate spindle speed (RPM) using:
+  
+\[
+n\ (RPM) = \frac{V_c \times 1000}{\pi \times D}
+\]
+
+Let’s use a conservative cutting speed of 180 m/min (typical recommended value):
+
+\[
+n = \frac{180 \times 1000}{\pi \times 25} \approx 2292\ RPM
+\]
+
+Therefore, spindle speed can safely range **between 1900 - 2300 RPM**.
+
+#### 2. Feed Rate Calculation (Fz):
+Recommended Chip Load per tooth (\(f_z\)) for medium carbon steels with coated carbide tool usually ranges from **0.08 - 0.15 mm/tooth**:
+
+Using a moderate value of chip load \( f_z = 0.10\ mm/tooth \):
+
+Feed per tooth (\(f_z\)): \(0.10\ mm/tooth\)
+
+Number of teeth (\(z\)): \(3\)
+
+Calculated table feed rate (\(F\)) with spindle speed around 2292 RPM:
+
+\[
+F(mm/min) = f_z \times z \times n
+\]
+
+\[
+F = 0.10 \times 3 \times 2292 \approx 687\ mm/min
+\]
+
+Recommended table feed rate would be **600 - 700 mm/min**.
+
+### Summary of Recommended Parameters:
+
+| Parameter              | Recommended Value                                |
+|------------------------|--------------------------------------------------|
+| Spindle Speed (RPM)    | \(1900 - 2300\ RPM\) (optimal around 2290 RPM)   |
+| Cutting Speed (\(V_c\))| \(150 - 220\ m/min\) (optimal around 180 m/min)  |
+| Feed per Tooth (\(f_z\)) | \(0.08 - 0.15\ mm/tooth\) (optimal: ≈ 0.10 mm/tooth) |
+| Feed rate (mm/min)     | \(600 - 700\ mm/min\) (optimal ≈ 687 mm/min)     |
+| Depth of Cut per pass  | \(0.5\ mm\) (as provided)                        |
+
+**Final recommendation:**  
+Use a cutting speed about 180 m/min, spindle speed around **2290 RPM**, and set feed rate to approximately **687 mm/min** with a chip load **0.10 mm/tooth**. Adjust based on machining conditions for optimal results and tool life.

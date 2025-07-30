@@ -1,0 +1,39 @@
+# G-Code Analysis
+
+## Operation Type
+This G-code represents a **2D profile milling operation** performed in multiple depth passes. The operation is executed in the XY plane (G17) with the tool progressively cutting deeper into the material.
+
+## Geometric Description
+
+The operation mills a complex 2D profile with the following characteristics:
+
+1. **Profile Shape**: A complex shape consisting of:
+   - Straight line segments
+   - Circular arcs (both clockwise G2 and counterclockwise G3)
+   
+2. **Depth Strategy**:
+   - The operation is performed in 4 depth passes:
+     - First pass at Z=1.5mm (lines N33-N50)
+     - Second pass at Z=1.0mm (lines N52-N69)
+     - Third pass at Z=0.5mm (lines N71-N88)
+     - Final pass at Z=0.0mm (lines N90-N107)
+
+3. **Tool Path Description**:
+   - The path starts at position X-46.138 Y23.724
+   - Follows a series of straight lines and arcs to create the profile
+   - Contains two circular pockets/features:
+     - One with clockwise arcs (G2) centered around X28.827 Y16.442
+     - Another with counterclockwise arcs (G3) in the lower portion of the profile
+   - The tool path forms what appears to be a complex contour with rounded features
+
+4. **Machining Parameters**:
+   - Spindle speed: 600 RPM (S600)
+   - Feed rate: 180 mm/min (F180)
+   - Coolant is active during cutting (M8)
+
+5. **Coordinate System**:
+   - Uses G54 work coordinate system
+   - Operates in absolute positioning mode (G90)
+   - Uses metric units (G710)
+
+The profile appears to be a complex shape with both straight edges and curved features, potentially representing a part with functional contours or pockets.

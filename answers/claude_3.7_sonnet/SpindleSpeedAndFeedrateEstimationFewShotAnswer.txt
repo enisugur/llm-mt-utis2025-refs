@@ -1,0 +1,52 @@
+I'll help you calculate the appropriate cutting parameters for your face milling operation.
+
+For C40 (AISI 1040) steel with a coated carbide facing tool, here's the analysis:
+
+1. Material Characteristics:
+- C40 (AISI 1040) is a medium carbon steel
+- Hardness typically ranges 170-210 HB
+- Good machinability rating
+
+2. Tool Characteristics Analysis:
+- Coated carbide allows for higher cutting speeds
+- 3 flutes is good for general-purpose face milling
+- 45° cutting edge angle is standard for face milling
+- 25mm diameter is a medium-size facing tool
+
+3. Cutting Parameter Calculations:
+
+For Roughing:
+- Recommended cutting speed (Vc) = 160 m/min
+- Spindle Speed (n) = (Vc × 1000)/(π × D)
+- n = (160 × 1000)/(π × 25) = 2,037 RPM
+- Feed per tooth (fz) = 0.15 mm/tooth
+- Feed rate = n × fz × number of flutes
+- Feed rate = 2,037 × 0.15 × 3 = 916.65 mm/min
+
+For Finishing:
+- Cutting speed (Vc) = 200 m/min
+- Spindle Speed = (200 × 1000)/(π × 25) = 2,546 RPM
+- Feed per tooth = 0.1 mm/tooth
+- Feed rate = 2,546 × 0.1 × 3 = 763.8 mm/min
+
+Recommended Parameters:
+```
+Spindle Speed for Roughing: 2000 RPM
+Spindle Speed for Finishing: 2500 RPM
+Feedrate for roughing: 900 mm/min 
+Feedrate for finishing: 750 mm/min
+```
+
+These parameters take into account:
+1. The relatively small tool diameter (25mm)
+2. The moderate hardness of C40 steel
+3. The shallow depth of cut (0.5mm)
+4. The use of coated carbide tooling
+5. The 3-flute configuration
+
+Note: These values can be adjusted based on:
+- Machine stability and rigidity
+- Surface finish requirements
+- Tool wear observations
+- Power availability of the machine
+- Workpiece fixturing stability

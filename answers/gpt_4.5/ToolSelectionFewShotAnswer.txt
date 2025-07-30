@@ -1,0 +1,14 @@
+Tool Type : Facing Tool  
+Length : 80 mm  
+Diameter : 50 mm  
+NumOfFlute : 4  
+Tool Cutting Edge Angle : 45°  
+Tool Material : Carbide Inserts (ISO P-type recommended)  
+
+Explanation :  
+For the described face-milling operation having low depth of cut per step (0.5 mm) and moderate cutting conditions (600 RPM spindle speed and 180 mm/min feedrate), a facing tool equipped with carbide inserts (ISO P-type) is highly recommended. This choice ensures superior wear resistance, efficient heat dissipation, and excellent surface finish at moderate speeds.  
+
+Tool Geometry Parameters Suggestion:  
+- Diameter : 50 mm, to provide an adequate cutting width for efficient face milling  
+- Number of Flutes: 4, optimal balance between chip removal, surface finish, and effective machining at specified feedrate and spindle speed  
+- Cutting Edge Angle : 45°, recommended to efficiently balance cutting pressure, minimize vibrations, and maximize stability while performing face milling operations.

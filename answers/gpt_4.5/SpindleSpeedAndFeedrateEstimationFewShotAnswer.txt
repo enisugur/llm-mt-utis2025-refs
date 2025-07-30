@@ -1,0 +1,67 @@
+Given your operational scenario of face milling on C40 Steel (AISI/SAE 1040) using a coated carbide facing tool, the ideal cutting parameters can be estimated as follows:
+
+1. Recommended Cutting Speeds (Vc) for C40 Steel (1040) with coated carbide tools typically range between:
+   - Roughing: \(140 - 180 \,  m/min\)
+   - Finishing: \(180 - 220 \,  m/min\)
+
+2. Tool Diameter (D): \(25 \, mm\)
+
+Using the formula for spindle speed (RPM):
+
+\[
+N = \frac{1000 \times V_c}{\pi \times D}
+\]
+
+Spindle Speed Calculation
+
+- For Roughing (average cutting speed ~160 m/min):
+
+\[
+N_{roughing} = \frac{1000 \times 160}{\pi \times 25} \approx 2037 \, RPM
+\]
+
+- For Finishing (average cutting speed ~200 m/min):
+
+\[
+N_{finishing} = \frac{1000 \times 200}{\pi \times 25} \approx 2546 \, RPM
+\]
+
+Feedrate Calculation:
+
+Feed per tooth (fz) guidelines for coated carbide tooling in steel usually vary as follows:
+
+- Roughing: \(0.1 - 0.2 \, mm/tooth\) (average 0.15 mm/tooth)
+- Finishing: \(0.05 - 0.1 \, mm/tooth\) (average 0.075 mm/tooth)
+
+Using the formula for feedrate (F):
+
+\[
+F = f_z \times Z \times N
+\]
+
+Where:
+
+- \(f_z\): feed per tooth (mm/tooth)
+- Z: number of flutes (teeth) \(= 3\)
+- N: spindle speed (RPM)
+
+Then:
+
+- Roughing:
+  
+\[
+F_{roughing} = 0.15 \, mm/tooth \times 3 \times 2037\, RPM \approx 917\, mm/min
+\]
+
+- Finishing:
+
+\[
+F_{finishing} = 0.075\, mm/tooth \times 3 \times 2546\, RPM \approx 573\, mm/min
+\]
+
+Thus, your recommended machining parameters are:
+
+"Spindle Speed for Roughing: 2040 RPM  
+Spindle Speed for Finishing: 2550 RPM  
+Feedrate for roughing: 920 mm/min  
+Feedrate for finishing: 570 mm/min"

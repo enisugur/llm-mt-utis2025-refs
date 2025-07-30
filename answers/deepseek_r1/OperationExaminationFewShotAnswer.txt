@@ -1,0 +1,3 @@
+- **Operation Description**: Contour Milling  
+- **Geometric Description**: A contour milling operation involving circular and linear interpolation to machine a complex profile. The tool performs multiple depth passes (Z1.5 → Z1 → Z0.5 → Z0) with a 7.281 mm radius circular arc (G2/G3 commands). The profile includes horizontal and vertical transitions between positions like X-46.138→X21.137 and Y23.724→Y-19.964. Spindle speed is 600 RPM with a feed rate of 180 mm/min. The operation uses step-down milling with positional accuracy tolerances of 0.01 mm on all axes (X/Y/Z/B/C).
+

@@ -1,0 +1,66 @@
+For the given face-milling operation on **CK45/SAE 1040 steel** with a **coated carbide facing tool**, here are the optimized parameters:
+
+---
+
+### **1. Cutting Speed (Vc):**
+- **Recommended range:** 180–250 m/min  
+  *(Coated carbide handles higher speeds; CK45 is machinable but requires balanced heat management)*  
+- **Optimal starting point:**  
+  $$\mathbf{V_c = 200 \, \text{m/min}}$$
+
+---
+
+### **2. Feed Rate (f):**
+- **Feed per tooth (fz):** 0.12–0.25 mm/tooth  
+  *(Balances chip load and surface finish for 3 flutes)*  
+- **Total feed rate calculation:**  
+  $$
+  f = f_z \times Z \times N \quad \text{(mm/min)}
+  $$  
+  Where:  
+  - \( Z = 3 \) (flutes)  
+  - \( N = \frac{V_c \times 1000}{\pi \times D} = \frac{200 \times 1000}{\pi \times 25} \approx 2546 \, \text{RPM} \)  
+
+  **Result:**  
+  $$
+  f = 0.2 \, \text{mm/tooth} \times 3 \times 2546 \approx 1528 \, \text{mm/min}
+  $$  
+  **Adjusted feed rate (practical):** 1200–1500 mm/min  
+
+---
+
+### **3. Depth of Cut (ap):**
+- **Radial (stepover):** 2 mm (stock allowance)  
+- **Axial:** 0.5 mm/pass (suitable for finishing)  
+
+---
+
+### **4. Key Considerations:**
+1. **Chip Thinning:**  
+   The 45° cutting edge angle reduces effective chip load. Compensate by slightly increasing feed (use \( f_z \geq 0.15 \, \text{mm/tooth} \)).  
+2. **Coolant:**  
+   Use flood coolant to manage heat and extend tool life.  
+3. **Surface Finish:**  
+   Reduce feed to 800–1000 mm/min for finer finishes.  
+
+---
+
+### **Sample G-Code Snippet**  
+```gcode
+G54 G90 G17  
+M03 S2546  
+G00 Z5  
+X-15 Y0  
+G01 Z-0.5 F500  
+G01 X150 F1500  (Feed rate = 1500 mm/min)  
+G00 Z5  
+M30
+```
+
+---
+
+### **Troubleshooting Tips**  
+- **Vibration:** Reduce RPM if chatter occurs.  
+- **Tool Wear:** Increase Vc to 220 m/min if chips are blue/purple (indicates optimal heat).  
+
+Let me know if you need further adjustments! 🛠️

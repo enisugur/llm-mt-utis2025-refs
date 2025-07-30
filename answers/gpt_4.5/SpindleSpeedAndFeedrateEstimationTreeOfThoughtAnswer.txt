@@ -1,0 +1,86 @@
+Expert 1 (CNC Machine Tool Expert):
+
+Given the material as C40 steel (AISI/SAE 1040), a medium-carbon steel, optimal machining conditions suggest a moderate cutting speed to ensure tool longevity and good surface quality. With our facing tool of 25 mm diameter having a coated carbide insert, a recommended cutting speed would typically be within 120-150 m/min. The average value of 135 m/min is a safe starting point given coated carbide's heat and wear resistance. Calculated spindle speed \(n\) can be expressed as:
+
+$$ n = \frac{1000 \cdot V_c}{\pi \cdot D} $$
+
+Where:
+
+- \(V_c\) is cutting speed in m/min (135 m/min recommended),
+- \(D\) is tool diameter in mm (25 mm).
+
+Thus:
+
+$$ n = \frac{1000 \cdot 135}{\pi \cdot 25} \approx 1719\; \text{rpm} $$
+
+For feed estimation, typically for carbide face milling cutters, a feed per tooth (\(f_z\)) around 0.15-0.30 mm/tooth is optimal. I would initially recommend a feed rate at a moderate level of about 0.2 mm/tooth. The feed rate (\(F\)) then is calculated as:
+
+$$ F = f_z \cdot z \cdot n $$
+
+Where:
+
+- \(f_z\) = 0.2 mm/tooth,
+- \(z\) = number of flutes = 3,
+- \(n\) = spindle speed = 1719 rpm.
+
+Thus:
+
+$$ F = 0.2 \cdot 3 \cdot 1719 \approx 1031\;\text{mm/min} $$
+
+Expert 1 Recommendation: Approximately 1719 rpm and 1031 mm/min feed rate.
+
+Expert 2 (Material Machining Specialist):
+
+Although coated carbide inserts are robust and recommended for medium-carbon steels such as C40 (1040), it is better to approach cutting speed slightly conservative due to steel hardness variations. I would rather select a slightly lower cutting speed to improve insert life, about 110-130 m/min. Taking mid-value 120 m/min:
+
+$$ n = \frac{1000 \cdot 120}{\pi \cdot 25} \approx 1528\; \text{rpm} $$
+
+Considering chip load, a safe chip load for this material-tool combination typically is around 0.18 mm/tooth. Thus, the feed rate becomes:
+
+$$ F = 0.18 \cdot 3 \cdot 1528 \approx 825\; \text{mm/min} $$
+
+Expert 2 Recommendation: Approximately 1528 rpm and 825 mm/min feed rate.
+
+Expert 3 (Tooling Manufacturer Expert):
+
+Our coated carbide face mill inserts and tools, especially 45° cutters, provide effectively reduced cutting forces and better heat dissipation. Therefore, we could afford slightly higher values. I'd recommend starting from 140-160 m/min as a cutting speed, selecting the midpoint 150 m/min:
+
+$$ n = \frac{1000 \cdot 150}{\pi \cdot 25} \approx 1910\;\text{rpm} $$
+
+Regarding chip load, our coating technology and geometry allow slightly higher loads; thus, 0.25 mm/tooth would yield better productivity without sacrificing much tool life:
+
+$$ F = 0.25 \cdot 3 \cdot 1910 \approx 1433 \;\text{mm/min} $$
+
+Expert 3 Recommendation: Approximately 1910 rpm and 1433 mm/min feed rate.
+
+Expert 4 (Experienced CNC Machinist):
+
+Practically on the shop floor while dealing with C40 medium-carbon steels, I have realized that utilizing an aggressive cutting speed or feed leads frequently to early tool wear and surface issues. Hence, being more conservative, and strongly recommending not surpassing 130 m/min for cutting speed:
+
+$$ n = \frac{1000 \cdot 130}{\pi \cdot 25} \approx 1655\;\text{rpm} $$
+
+The experienced approach would set moderate chip load at about 0.18-0.22 mm/tooth, selecting 0.2 mm/tooth for balance:
+
+$$ F = 0.2\cdot 3 \cdot 1655 \approx 993 \;\text{mm/min} $$
+
+Expert 4 Recommendation: Approximately 1655 rpm and 993 mm/min feed rate.
+
+Conflicts During Discussion:
+
+- Expert 3 suggests significantly more aggressive cutting parameters, asserting that modern coating technology allows higher productivity. 
+- Experts 2 and 4 advocate more cautious parameters emphasizing tool longevity and robustness against unexpected material property variations.
+- Expert 1 provides a balanced recommendation between productivity and caution.
+
+Summary Conclusion (Accounting for Expert's conflicts):
+
+Considering the expert discussions and variations, a balanced and practically safe recommendation can be:
+
+- Recommended Spindle Speed range: 1600-1800 rpm
+- Safe Feed Rate range: 900-1100 mm/min
+
+Suggested optimal starting parameters for initial machining tests (average of safer approaches):
+
+- Spindle Speed: ~1700 rpm
+- Feed Rate: ~1000 mm/min
+
+These parameters offer reliable starting points balancing productivity, quality, and tool longevity. Adjustments might be done according to specific conditions observed during machining trials.

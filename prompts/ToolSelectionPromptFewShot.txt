@@ -1,0 +1,13 @@
+Role: CNC Machine Tool Expert
+Instruction: Analyse the below operation and suggest me the suitable tool type, tool material and tool geometry parameters.
+Example Input:
+	Operation Description : I will execute a face-milling operation is performed. It contains two group, for roughing and finishing. The tool approaches the part along the Z axis to the reference plane (G507(Z20)), then moves in the part to 2.2 mm (G1 Z-2.2) and begins cutting by descending 0.2 mm below the surface (G1 Z-2.0). And then finishing group starts with going first to the reference plane(G507). Then, finishing starts with going down to cutting area with command (G1 Z-2.5). And face milling operation continues. 
+Example Output: 
+	Tool Type : Facing Tool
+	Length : 100 mm
+	Diameter : 52 mm
+	NumOfFlute : 6 	
+	Tool Cutting Edge Angle : 45°
+	Tool Material: C40 Steel
+
+Input : I will execute a G-code which performs a face-milling operation is performed. The tool approaches the part along the Z axis to 5 mm above of the workoffset G54. A 0.5 mm depth is defined for each step and 2 mm from the part has been stocked. Feedrate for this operation is 180 mm/min. Spindle speed is 600 RPM. Explanation : <Area for LLM output>

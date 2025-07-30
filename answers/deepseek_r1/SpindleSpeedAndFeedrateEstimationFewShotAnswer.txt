@@ -1,0 +1,53 @@
+**Analysis and Recommendations:**
+
+**Workpiece Material:** C40 Steel (AISI 1040)  
+**Tool Material:** Coated Carbide  
+**Tool Diameter:** 25 mm  
+**Number of Flutes:** 3  
+**Depth of Cut:** 0.5 mm  
+
+### **Calculations:**
+1. **Cutting Speed (Vc):**  
+   - **Roughing:** 160 m/min (conservative for material removal)  
+   - **Finishing:** 180 m/min (higher for better surface finish)  
+
+   Spindle Speed (N):  
+   $$
+   N = \frac{V_c \times 1000}{\pi \times D}
+   $$  
+   - **Roughing:**  
+     $$
+     N_{\text{rough}} = \frac{160 \times 1000}{\pi \times 25} \approx 2037 \text{ RPM} \quad (\approx 2000 \text{ RPM practical})
+     $$  
+   - **Finishing:**  
+     $$
+     N_{\text{finish}} = \frac{180 \times 1000}{\pi \times 25} \approx 2293 \text{ RPM} \quad (\approx 2300 \text{ RPM practical})
+     $$  
+
+2. **Feed Rate (F):**  
+   Feed per Tooth (\(f_z\)):  
+   - **Roughing:** 0.15 mm/tooth  
+   - **Finishing:** 0.08 mm/tooth  
+
+   Feed Rate Formula:  
+   $$
+   F = N \times f_z \times \text{NumOfFlute}
+   $$  
+   - **Roughing:**  
+     $$
+     F_{\text{rough}} = 2000 \times 0.15 \times 3 = 900 \text{ mm/min}
+     $$  
+   - **Finishing:**  
+     $$
+     F_{\text{finish}} = 2300 \times 0.08 \times 3 = 552 \text{ mm/min} \quad (\approx 550 \text{ mm/min practical})
+     $$  
+
+---
+
+### **Final Recommendations:**
+- **Spindle Speed for Roughing:** 2000 RPM  
+- **Spindle Speed for Finishing:** 2300 RPM  
+- **Feedrate for Roughing:** 900 mm/min  
+- **Feedrate for Finishing:** 550 mm/min  
+
+**Note:** Adjustments may be needed based on machine rigidity, coolant use, and tool wear. Always validate with a test cut.
