@@ -27,4 +27,4 @@ The study explores how modern large language models (LLMs) can be effectively ap
 │   ├───deepseek_r1
 │   └───gpt_4.5
 └───prompts
-└── README.md              # This file
+└── README.md
